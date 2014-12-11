@@ -1,4 +1,12 @@
 HrsRelease::Application.routes.draw do
+  
+  Rails.application.routes.draw do
+    scope '/api' do
+      resources :companies, except: [:new, :edit]
+    end
+  end
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
