@@ -14,6 +14,10 @@ group :test do
   gem 'rspec-rails'
 end
 
+group :production do
+  gem 'rails_12factor'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
@@ -28,3 +32,5 @@ end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+ruby '2.0.0'
