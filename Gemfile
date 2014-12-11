@@ -10,6 +10,7 @@ gem 'rails-api'
 
 gem 'pg'
 
+
 group :test do
   gem 'rspec-rails'
 end
