@@ -10,6 +10,7 @@ gem 'rails-api'
 
 gem 'pg'
 
+gem 'thin'
 
 group :test do
   gem 'rspec-rails'
