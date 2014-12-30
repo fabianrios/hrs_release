@@ -11,6 +11,6 @@
  */
 angular.module('hrsReleaseApp')
   .controller('CompaniesController', ['$scope', 'Company', function ($scope, Company) {
-    $scope.companies = Company.query();
+    $scope.companies = Company.show(1);
   }]);
   
