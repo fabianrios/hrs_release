@@ -11,7 +11,6 @@ class CompaniesController < ApplicationController
   # GET /companies/1.json
   def show
     @company = Company.find(params[:id])
-
     render json: @company
   end
 
