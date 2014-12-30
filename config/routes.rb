@@ -2,7 +2,7 @@ HrsRelease::Application.routes.draw do
   
   Rails.application.routes.draw do
     scope '/api' do
-      resources :companies, except: [:new, :edit]
+      resources :companies
     end
   end
   
