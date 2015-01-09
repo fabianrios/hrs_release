@@ -11,12 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141211040414) do
+ActiveRecord::Schema.define(:version => 20150108222343) do
 
   create_table "companies", :force => true do |t|
-    t.string   "name",       :null => false
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "name",               :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "logo"
+    t.string   "mainurl"
+    t.string   "user"
+    t.string   "password"
+    t.string   "banner_dashboard"
+    t.string   "banner_cms"
+    t.string   "banner_solicitudes"
+    t.boolean  "active"
+    t.string   "sv_cesantias"
+    t.string   "sv_coworkers"
+    t.string   "sv_encabezado"
+    t.string   "sv_organigrama"
+    t.string   "sv_endeudamiento"
   end
 
   add_index "companies", ["name"], :name => "index_companies_on_name", :unique => true
